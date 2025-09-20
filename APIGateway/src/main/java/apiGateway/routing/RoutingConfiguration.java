@@ -16,7 +16,6 @@ public class RoutingConfiguration {
 						.filters(f -> f.rewritePath("/currency-conversion", "/currency-conversion-feign"))
 						.uri("lb://currency-conversion"))
 				.route(p -> p.path("/users/**").uri("lb://users-service"))
-
 				.build();
 	}
 }

@@ -3507,3 +3507,24 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2025-09-20 23:34:12,531 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-20 23:34:12,628 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-20 23:34:12,635 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\UsersService\src\test\resources
+2025-09-20 23:35:31,864 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-20 23:35:31,894 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-20 23:35:31,900 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\APIGateway\src\test\resources
+2025-09-20 23:44:54,806 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-20 23:44:54,812 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-20 23:44:54,828 [Worker-128: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\UsersService\src\test\resources
+2025-09-20 23:52:59,258 [Worker-135: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-20 23:52:59,951 [Worker-135: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-20 23:53:01,031 [Worker-135: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-20 23:54:38,685 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-20 23:54:38,687 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-20 23:54:38,698 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\UsersService\src\test\resources
+2025-09-20 23:54:44,253 [Worker-130: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-20 23:54:44,908 [Worker-130: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-20 23:54:45,368 [Worker-130: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-21 00:02:49,529 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-21 00:02:49,622 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-21 00:02:49,628 [Worker-139: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\APIGateway\src\test\resources
+2025-09-21 00:03:01,269 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-21 00:03:01,467 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-21 00:03:01,478 [Worker-137: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\APIGateway\src\test\resources

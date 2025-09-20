@@ -23,11 +23,12 @@ public class ApiGatewayAuthentication {
 		http
 		.csrf(csrf -> csrf.disable())
 		.authorizeExchange(exchange -> exchange
-				.pathMatchers(HttpMethod.POST).hasRole("ADMIN")
+				.pathMatchers(HttpMethod.POST, "/users/newUser").hasRole("ADMIN")
+				.pathMatchers(HttpMethod.POST).hasRole("OWNER")
+				//.pathMatchers(HttpMethod.POST, "/users/newUser").hasRole("OWNER")
 				.pathMatchers("/currency-exchange").permitAll()
 				.pathMatchers("/currency-conversion").hasRole("USER")
 				.pathMatchers("/users").hasAnyRole("ADMIN", "OWNER")
-				.pathMatchers(HttpMethod.POST, "/users/newOwner").hasRole("OWNER")
 			    .pathMatchers(HttpMethod.DELETE, "/users/**").hasRole("OWNER")
 				).httpBasic(Customizer.withDefaults());
 		
