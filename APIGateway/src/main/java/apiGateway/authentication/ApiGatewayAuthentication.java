@@ -26,7 +26,9 @@ public class ApiGatewayAuthentication {
 				.pathMatchers(HttpMethod.POST).hasRole("ADMIN")
 				.pathMatchers("/currency-exchange").permitAll()
 				.pathMatchers("/currency-conversion").hasRole("USER")
-				.pathMatchers("/users").hasRole("ADMIN")
+				.pathMatchers("/users").hasAnyRole("ADMIN", "OWNER")
+				.pathMatchers(HttpMethod.POST, "/users/newOwner").hasRole("OWNER")
+			    .pathMatchers(HttpMethod.DELETE, "/users/**").hasRole("OWNER")
 				).httpBasic(Customizer.withDefaults());
 		
 		return http.build();
