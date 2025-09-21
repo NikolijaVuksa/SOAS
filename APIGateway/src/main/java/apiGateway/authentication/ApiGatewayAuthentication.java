@@ -30,6 +30,8 @@ public class ApiGatewayAuthentication {
 				.pathMatchers("/currency-conversion").hasRole("USER")
 				.pathMatchers("/users").hasAnyRole("ADMIN", "OWNER")
 			    .pathMatchers(HttpMethod.DELETE, "/users/**").hasRole("OWNER")
+			    .pathMatchers(HttpMethod.GET, "/accounts/myAccount").hasRole("USER")
+	            .pathMatchers("/accounts/**").hasRole("ADMIN")
 				).httpBasic(Customizer.withDefaults());
 		
 		return http.build();
@@ -54,7 +56,8 @@ public class ApiGatewayAuthentication {
 				);
 			
 		}
-
+	
+	
 	
 	@Bean
 	BCryptPasswordEncoder getEncoder() {
