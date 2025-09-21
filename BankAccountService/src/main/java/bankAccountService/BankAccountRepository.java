@@ -10,10 +10,8 @@ import jakarta.transaction.Transactional;
 
 
 public interface BankAccountRepository extends JpaRepository<BankAccountModel, Integer> {
-	
-	  BankAccountModel findByEmail(String email);
-	  boolean existsByEmail(String email);
-	  void deleteByEmail(String email);
+	BankAccountModel findByEmail(String email);
+    void deleteByEmail(String email);
 }
 
 	

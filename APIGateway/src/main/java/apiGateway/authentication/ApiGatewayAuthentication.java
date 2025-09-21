@@ -23,15 +23,27 @@ public class ApiGatewayAuthentication {
 		http
 		.csrf(csrf -> csrf.disable())
 		.authorizeExchange(exchange -> exchange
-				.pathMatchers(HttpMethod.POST, "/users/newUser").hasRole("ADMIN")
+				/*.pathMatchers(HttpMethod.POST, "/users/newUser").hasRole("ADMIN")
 				.pathMatchers(HttpMethod.POST).hasRole("OWNER")
-				//.pathMatchers(HttpMethod.POST, "/users/newUser").hasRole("OWNER")
 				.pathMatchers("/currency-exchange").permitAll()
 				.pathMatchers("/currency-conversion").hasRole("USER")
 				.pathMatchers("/users").hasAnyRole("ADMIN", "OWNER")
 			    .pathMatchers(HttpMethod.DELETE, "/users/**").hasRole("OWNER")
 			    .pathMatchers(HttpMethod.GET, "/accounts/myAccount").hasRole("USER")
-	            .pathMatchers("/accounts/**").hasRole("ADMIN")
+			    .pathMatchers("/accounts/**").hasAnyRole("ADMIN")*/
+				
+				.pathMatchers(HttpMethod.POST, "/users/**").hasAnyRole("ADMIN", "OWNER") 
+	            .pathMatchers(HttpMethod.PUT, "/users/**").hasAnyRole("ADMIN", "OWNER") 
+	            .pathMatchers(HttpMethod.DELETE, "/users/**").hasRole("OWNER")           
+	            .pathMatchers("/users/**").hasAnyRole("ADMIN", "OWNER")                  
+
+	            .pathMatchers("/currency-exchange/**").permitAll()
+
+	            .pathMatchers("/currency-conversion/**").hasRole("USER")
+
+	            .pathMatchers(HttpMethod.GET, "/accounts/myAccount").hasRole("USER")   
+	            .pathMatchers("/accounts/**").hasRole("ADMIN") 
+	            .pathMatchers(HttpMethod.POST, "/accounts/newAccount").hasRole("ADMIN")
 				).httpBasic(Customizer.withDefaults());
 		
 		return http.build();

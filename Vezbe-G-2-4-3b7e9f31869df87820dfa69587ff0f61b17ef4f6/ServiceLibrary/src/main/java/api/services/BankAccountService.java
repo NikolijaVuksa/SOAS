@@ -1,6 +1,8 @@
 package api.services;
 
 import java.util.List;
+
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +14,7 @@ public interface BankAccountService {
     List<BankAccountDto> getAllAccounts();
 
     @GetMapping("/accounts/myAccount")
-    BankAccountDto getMyAccount(String email);
+    ResponseEntity<?> getMyAccount(@RequestHeader("X-User-Email") String email);
 
     @PostMapping("/accounts/newAccount")
     ResponseEntity<?> createAccount(@RequestBody BankAccountDto dto);
@@ -21,6 +23,7 @@ public interface BankAccountService {
     ResponseEntity<?> updateAccount(@RequestBody BankAccountDto dto);
 
     @DeleteMapping("/accounts")
-    ResponseEntity<?> deleteAccount(@RequestParam String email);
+    ResponseEntity<?> deleteAccount(@RequestBody BankAccountDto dto);
+
 }
 

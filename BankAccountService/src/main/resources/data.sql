@@ -1,0 +1,2 @@
+INSERT INTO BANK_ACCOUNT (ID, EMAIL, EUR, USD, RSD, CHF, CAD, GBP)
+VALUES (1, 'user@uns.ac.rs', 0, 0, 0, 0, 0, 0);

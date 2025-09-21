@@ -1,5 +1,7 @@
 package bankAccountService;
 
+import java.math.BigDecimal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,38 +15,32 @@ import jakarta.persistence.Table;
 public class BankAccountModel {
 	
 	@Id
-	@GeneratedValue(strategy= GenerationType.SEQUENCE,generator="my_bank_seq")
-	@SequenceGenerator(name="my_bank_seq", sequenceName="my_bank_seq", allocationSize=1, initialValue=1)
+	@GeneratedValue(strategy= GenerationType.SEQUENCE,generator="my_acc_seq")
+	@SequenceGenerator(name="my_acc_seq", sequenceName="my_acc_seq", allocationSize=1, initialValue=2)
 	private int id;
 	
-
+	
 	@Column(nullable = false, unique = true)
-	private String email; 
-	
-	@Column(nullable = false) 
-	private double eur = 0;
-	
-	@Column(nullable = false) 
-	private double usd = 0;
-	
-	@Column(nullable = false) 
-	private double chf = 0;
-	
-	@Column(nullable = false) 
-	private double gbp = 0;
-	
-	@Column(nullable = false) 
-	private double cad = 0;
-	
-	@Column(nullable = false) 
-	private double rsd = 0;
+    private String email;
+
+	private BigDecimal eur = BigDecimal.ZERO;
+    private BigDecimal usd = BigDecimal.ZERO;
+    private BigDecimal chf = BigDecimal.ZERO;
+    private BigDecimal gbp = BigDecimal.ZERO;
+    private BigDecimal cad = BigDecimal.ZERO;
+    private BigDecimal rsd = BigDecimal.ZERO;
 	
 	public BankAccountModel() {
 		
 	}
 	
-	public BankAccountModel(String email, double eur, double usd, double chf, double gbp, double cad, double rsd) {
+	public BankAccountModel(String email) {
+		this.email = email;
+	}
+	public BankAccountModel(int id, String email, BigDecimal eur, BigDecimal usd, BigDecimal chf, BigDecimal gbp, BigDecimal cad,
+			BigDecimal rsd) {
 		super();
+		this.id = id;
 		this.email = email;
 		this.eur = eur;
 		this.usd = usd;
@@ -53,10 +49,10 @@ public class BankAccountModel {
 		this.cad = cad;
 		this.rsd = rsd;
 	}
-	public BankAccountModel(int id, String email, double eur, double usd, double chf, double gbp, double cad,
-			double rsd) {
+	
+	public BankAccountModel(String email, BigDecimal eur, BigDecimal usd, BigDecimal chf, BigDecimal gbp,
+			BigDecimal cad, BigDecimal rsd) {
 		super();
-		this.id = id;
 		this.email = email;
 		this.eur = eur;
 		this.usd = usd;
@@ -77,40 +73,40 @@ public class BankAccountModel {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public double getEur() {
+	public BigDecimal getEur() {
 		return eur;
 	}
-	public void setEur(double eur) {
+	public void setEur(BigDecimal eur) {
 		this.eur = eur;
 	}
-	public double getUsd() {
+	public BigDecimal getUsd() {
 		return usd;
 	}
-	public void setUsd(double usd) {
+	public void setUsd(BigDecimal usd) {
 		this.usd = usd;
 	}
-	public double getChf() {
+	public BigDecimal getChf() {
 		return chf;
 	}
-	public void setChf(double chf) {
+	public void setChf(BigDecimal chf) {
 		this.chf = chf;
 	}
-	public double getGbp() {
+	public BigDecimal getGbp() {
 		return gbp;
 	}
-	public void setGbp(double gbp) {
+	public void setGbp(BigDecimal gbp) {
 		this.gbp = gbp;
 	}
-	public double getCad() {
+	public BigDecimal getCad() {
 		return cad;
 	}
-	public void setCad(double cad) {
+	public void setCad(BigDecimal cad) {
 		this.cad = cad;
 	}
-	public double getRsd() {
+	public BigDecimal getRsd() {
 		return rsd;
 	}
-	public void setRsd(double rsd) {
+	public void setRsd(BigDecimal rsd) {
 		this.rsd = rsd;
 	}
 

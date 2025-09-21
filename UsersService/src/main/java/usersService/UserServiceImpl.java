@@ -8,7 +8,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
+import api.dtos.BankAccountDto;
 import api.dtos.UserDto;
+import api.proxies.BankAccountProxy;
+import api.proxies.CurrencyExchangeProxy;
 import api.services.UsersService;
 
 @RestController
@@ -16,6 +19,9 @@ public class UserServiceImpl implements UsersService{
 
 	@Autowired
 	private UserRepository repo;
+	
+	@Autowired
+	private BankAccountProxy bankAccountProxy;
 	
 	@Override
 	public List<UserDto> getUsers() {
@@ -29,8 +35,14 @@ public class UserServiceImpl implements UsersService{
 
 	@Override
 	public UserDto getUserByEmail(String email) {
-		return convertModelToDto(repo.findByEmail(email));
+	    UserModel model = repo.findByEmail(email);
+	    if (model == null) {
+	        return null; 
+	    }
+	    return convertModelToDto(model);
 	}
+
+
 
 	@Override
 	public ResponseEntity<?> createAdmin(UserDto dto) {
@@ -46,15 +58,22 @@ public class UserServiceImpl implements UsersService{
 
 	@Override
 	public ResponseEntity<?> createUser(UserDto dto) {
-		if(repo.findByEmail(dto.getEmail()) == null) {
-			dto.setRole("USER");
-			UserModel model= convertDtoToModel(dto);
-			return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(model));
-		}else {
-			return ResponseEntity.status(HttpStatus.CONFLICT).body("User with passed email already exist");
-			
-		}
+	    if (repo.findByEmail(dto.getEmail()) == null) {
+	        dto.setRole("USER");
+	        UserModel model = convertDtoToModel(dto);
+	        repo.save(model);
+
+	        BankAccountDto accountDto = new BankAccountDto(dto.getEmail());
+	        bankAccountProxy.createAccount(accountDto);
+
+	        return ResponseEntity.status(HttpStatus.CREATED)
+	                             .body("User created and bank account opened");
+	    } else {
+	        return ResponseEntity.status(HttpStatus.CONFLICT)
+	                             .body("User with passed email already exists");
+	    }
 	}
+
 
 	@Override
 	public ResponseEntity<?> updateUser(UserDto dto) {
@@ -71,13 +90,18 @@ public class UserServiceImpl implements UsersService{
 	@Override
 	public ResponseEntity<?> deleteUser(String email) {
 	    UserModel existing = repo.findByEmail(email);
-	    if(existing != null) {
+	    if (existing != null) {
 	        repo.delete(existing);
-	        return ResponseEntity.status(HttpStatus.OK).body("User deleted");
+
+	        BankAccountDto dto = new BankAccountDto(email);
+	        bankAccountProxy.deleteAccount(dto);
+
+	        return ResponseEntity.ok("User and account deleted");
 	    } else {
 	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
 	    }
 	}
+
 	
 	@Override
 	public ResponseEntity<?> createOwner(UserDto dto) {
