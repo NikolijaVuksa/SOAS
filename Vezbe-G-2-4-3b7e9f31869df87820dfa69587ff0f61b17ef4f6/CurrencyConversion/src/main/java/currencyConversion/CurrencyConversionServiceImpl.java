@@ -8,10 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import api.dtos.CurrencyConversionDto;
-import api.dtos.CurrencyExchangeDto;
 import api.proxies.CurrencyExchangeProxy;
 import api.services.CurrencyConversionService;
+import dto.CurrencyConversionDto;
+import dto.CurrencyExchangeDto;
 import io.github.resilience4j.retry.RetryRegistry;
 import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;

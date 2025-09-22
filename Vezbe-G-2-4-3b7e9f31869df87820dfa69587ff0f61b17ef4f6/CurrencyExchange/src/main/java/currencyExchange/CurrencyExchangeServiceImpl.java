@@ -8,8 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import api.dtos.CurrencyExchangeDto;
 import api.services.CurrencyExchangeService;
+import dto.CurrencyExchangeDto;
 import util.exceptions.CurrencyDoesntExistException;
 import util.exceptions.NoDataFoundException;
 

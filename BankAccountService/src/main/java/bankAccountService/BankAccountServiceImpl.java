@@ -5,10 +5,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import api.dtos.BankAccountDto;
-import api.dtos.UserDto;
 import api.proxies.UsersServiceProxy;
 import api.services.BankAccountService;
+import dto.BankAccountDto;
+import dto.UserDto;
 
 import java.util.ArrayList;
 import java.util.List;

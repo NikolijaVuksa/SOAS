@@ -12,7 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import api.dtos.UserDto;
+import dto.UserDto;
 
 @Configuration
 @EnableWebFluxSecurity
@@ -51,7 +51,8 @@ public class ApiGatewayAuthentication {
 	
 	@Bean
 	ReactiveUserDetailsService reactiveUserDetailsService(WebClient.Builder webClientBuilder, BCryptPasswordEncoder encoder) {
-		WebClient client = webClientBuilder.baseUrl("http://localhost:8770").build();
+		//WebClient client = webClientBuilder.baseUrl("http://localhost:8770").build();
+		WebClient client = webClientBuilder.baseUrl("http://users-service:8770").build();
 		
 		return user -> client.get()
 				.uri(uriBuilder -> uriBuilder
