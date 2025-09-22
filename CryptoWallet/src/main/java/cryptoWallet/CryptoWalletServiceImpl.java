@@ -67,7 +67,7 @@ public class CryptoWalletServiceImpl implements CryptoWalletService {
                                  .body("Crypto wallet already exists");
         }
 
-        CryptoWallet wallet = new CryptoWallet(email,dto.getBtc(),dto.getEth(),dto.getUsdt());
+        CryptoWallet wallet = new CryptoWallet(email,dto.getBTC(),dto.getETH(),dto.getUST());
         return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(wallet));
     }
 
@@ -77,9 +77,9 @@ public class CryptoWalletServiceImpl implements CryptoWalletService {
         if (wallet == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Crypto wallet not found");
         }
-        wallet.setBtc(dto.getBtc());
-        wallet.setEth(dto.getEth());
-        wallet.setUsdt(dto.getUsdt());
+        wallet.setBTC(dto.getBTC());
+        wallet.setETH(dto.getETH());
+        wallet.setUST(dto.getUST());
         return ResponseEntity.ok(repo.save(wallet));
     }
 
@@ -99,9 +99,9 @@ public class CryptoWalletServiceImpl implements CryptoWalletService {
 
     private CryptoWalletDto convertModelToDto(CryptoWallet model) {
     	CryptoWalletDto dto = new CryptoWalletDto(model.getEmail());
-        dto.setBtc(model.getBtc());
-        dto.setEth(model.getEth());
-        dto.setUsdt(model.getUsdt());
+        dto.setBTC(model.getBTC());
+        dto.setETH(model.getETH());
+        dto.setUST(model.getUST());
         return dto;
     }
 }

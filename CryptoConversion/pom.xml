@@ -72,26 +72,22 @@
     		<version>4.3.0</version>
 		</dependency>
 
-		<!-- Actuator za health i metrics -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<!-- AOP za Resilience4j i Chaos Monkey -->
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 
-		<!-- Resilience4j za circuit breaker -->
 		<dependency>
 		    <groupId>io.github.resilience4j</groupId>
 		    <artifactId>resilience4j-spring-boot2</artifactId>
 		    <version>2.3.0</version>
 		</dependency>
 
-		<!-- Chaos Monkey za testiranje otpornosti -->
 		<dependency>
 		    <groupId>de.codecentric</groupId>
 		    <artifactId>chaos-monkey-spring-boot</artifactId>

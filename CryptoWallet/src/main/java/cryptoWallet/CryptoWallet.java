@@ -17,9 +17,9 @@ public class CryptoWallet {
 	@Column(nullable = false, unique = true)
     private String email;
 
-    private BigDecimal btc = BigDecimal.ZERO;
-    private BigDecimal eth = BigDecimal.ZERO;
-    private BigDecimal usdt = BigDecimal.ZERO; 
+    private BigDecimal BTC = BigDecimal.ZERO;
+    private BigDecimal ETH = BigDecimal.ZERO;
+    private BigDecimal UST = BigDecimal.ZERO; 
 
     public CryptoWallet() {}
     
@@ -27,19 +27,19 @@ public class CryptoWallet {
     	this.email = email;
     }
     
-    public CryptoWallet(int id, String email, BigDecimal btc, BigDecimal eth, BigDecimal usdt) {
+    public CryptoWallet(int id, String email, BigDecimal BTC, BigDecimal ETH, BigDecimal UST) {
     	this.id = id;
         this.email = email;
-        this.btc = btc;
-        this.eth = eth;
-        this.usdt = usdt;
+        this.BTC = BTC;
+        this.ETH = ETH;
+        this.UST = UST;
     }
 
-    public CryptoWallet(String email, BigDecimal btc, BigDecimal eth, BigDecimal usdt) {
+    public CryptoWallet(String email, BigDecimal BTC, BigDecimal ETH, BigDecimal UST) {
         this.email = email;
-        this.btc = btc;
-        this.eth = eth;
-        this.usdt = usdt;
+        this.BTC = BTC;
+        this.ETH = ETH;
+        this.UST = UST;
     }
 
 	public int getId() {
@@ -58,28 +58,28 @@ public class CryptoWallet {
 		this.email = email;
 	}
 
-	public BigDecimal getBtc() {
-		return btc;
+	public BigDecimal getBTC() {
+		return BTC;
 	}
 
-	public void setBtc(BigDecimal btc) {
-		this.btc = btc;
+	public void setBTC(BigDecimal BTC) {
+		this.BTC = BTC;
 	}
 
-	public BigDecimal getEth() {
-		return eth;
+	public BigDecimal getETH() {
+		return ETH;
 	}
 
-	public void setEth(BigDecimal eth) {
-		this.eth = eth;
+	public void setETH(BigDecimal ETH) {
+		this.ETH = ETH;
 	}
 
-	public BigDecimal getUsdt() {
-		return usdt;
+	public BigDecimal getUST() {
+		return UST;
 	}
 
-	public void setUsdt(BigDecimal usdt) {
-		this.usdt = usdt;
+	public void setUST(BigDecimal UST) {
+		this.UST = UST;
 	}
 
 }

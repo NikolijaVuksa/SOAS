@@ -6,7 +6,7 @@ public class CryptoWalletDto {
 
 	private String email;
 	  
-	private BigDecimal btc, eth, usdt;
+	private BigDecimal BTC, ETH, UST;
 	
 	public CryptoWalletDto() {
 		
@@ -14,18 +14,18 @@ public class CryptoWalletDto {
 	 
 	public CryptoWalletDto(String email) {
         this.email = email;
-        this.btc = BigDecimal.ZERO;
-        this.eth = BigDecimal.ZERO;
-        this.usdt = BigDecimal.ZERO;
+        this.BTC = BigDecimal.ZERO;
+        this.ETH = BigDecimal.ZERO;
+        this.UST = BigDecimal.ZERO;
     }
 	
 	
-	public CryptoWalletDto(String email, BigDecimal btc, BigDecimal eth, BigDecimal usdt) {
+	public CryptoWalletDto(String email, BigDecimal BTC, BigDecimal ETH, BigDecimal UST) {
 		super();
 		this.email = email;
-		this.btc = btc;
-		this.eth = eth;
-		this.usdt = usdt;
+		this.BTC = BTC;
+		this.ETH = ETH;
+		this.UST = UST;
 	}
 
 	public String getEmail() {
@@ -36,28 +36,28 @@ public class CryptoWalletDto {
 		this.email = email;
 	}
 
-	public BigDecimal getBtc() {
-		return btc;
+	public BigDecimal getBTC() {
+		return BTC;
 	}
 
-	public void setBtc(BigDecimal btc) {
-		this.btc = btc;
+	public void setBTC(BigDecimal BTC) {
+		this.BTC = BTC;
 	}
 
-	public BigDecimal getEth() {
-		return eth;
+	public BigDecimal getETH() {
+		return ETH;
 	}
 
-	public void setEth(BigDecimal eth) {
-		this.eth = eth;
+	public void setETH(BigDecimal ETH) {
+		this.ETH = ETH;
 	}
 
-	public BigDecimal getUsdt() {
-		return usdt;
+	public BigDecimal getUST() {
+		return UST;
 	}
 
-	public void setUsdt(BigDecimal usdt) {
-		this.usdt = usdt;
+	public void setUST(BigDecimal UST) {
+		this.UST = UST;
 	}
 	
 	
