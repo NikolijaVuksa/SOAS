@@ -9,9 +9,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import api.proxies.BankAccountProxy;
+import api.proxies.CryptoWalletProxy;
 import api.proxies.CurrencyExchangeProxy;
 import api.services.UsersService;
 import dto.BankAccountDto;
+import dto.CryptoWalletDto;
 import dto.UserDto;
 
 @RestController
@@ -22,6 +24,9 @@ public class UserServiceImpl implements UsersService{
 	
 	@Autowired
 	private BankAccountProxy bankAccountProxy;
+	
+	@Autowired
+	private CryptoWalletProxy cryptoWalletProxy;
 	
 	@Override
 	public List<UserDto> getUsers() {
@@ -66,8 +71,10 @@ public class UserServiceImpl implements UsersService{
 	        BankAccountDto accountDto = new BankAccountDto(dto.getEmail());
 	        bankAccountProxy.createAccount(accountDto);
 
+	        CryptoWalletDto walletDto = new CryptoWalletDto(dto.getEmail());
+	        cryptoWalletProxy.createWallet(walletDto);
 	        return ResponseEntity.status(HttpStatus.CREATED)
-	                             .body("User created and bank account opened");
+	                             .body("User created, bank account and crypto wallet opened");
 	    } else {
 	        return ResponseEntity.status(HttpStatus.CONFLICT)
 	                             .body("User with passed email already exists");
@@ -95,9 +102,13 @@ public class UserServiceImpl implements UsersService{
 
 	        BankAccountDto dto = new BankAccountDto(email);
 	        bankAccountProxy.deleteAccount(dto);
+	        
+	        CryptoWalletDto walletDto = new CryptoWalletDto(dto.getEmail());
+	        cryptoWalletProxy.deleteWallet(walletDto);
 
-	        return ResponseEntity.ok("User and account deleted");
-	    } else {
+	        return ResponseEntity.ok("User, bank account and crypto wallet deleted");
+	    } 
+	    else {
 	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
 	    }
 	}
