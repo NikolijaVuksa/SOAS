@@ -19,7 +19,10 @@ public class RoutingConfiguration {
 				.route(p -> p.path("/accounts/**").uri("lb://bank-account-service"))
 				.route(p -> p.path("/crypto-exchange").uri("lb://crypto-exchange"))
 				.route(p -> p.path("/wallets/**").uri("lb://crypto-wallet"))
-
+				.route(p -> p.path("/crypto-conversion-feign").uri("lb://crypto-conversion"))
+				.route(p -> p.path("/crypto-conversion")
+						.filters(f -> f.rewritePath("/crypto-conversion", "/crypto-conversion-feign"))
+						.uri("lb://crypto-conversion"))
 				.build();
 	}
 }
