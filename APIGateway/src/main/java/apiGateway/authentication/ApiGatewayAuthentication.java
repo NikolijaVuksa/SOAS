@@ -44,6 +44,9 @@ public class ApiGatewayAuthentication {
 	            .pathMatchers(HttpMethod.GET, "/accounts/myAccount").hasRole("USER")   
 	            .pathMatchers("/accounts/**").hasRole("ADMIN") 
 	            .pathMatchers(HttpMethod.POST, "/accounts/newAccount").hasRole("ADMIN")
+	            
+	            .pathMatchers("/crypto-exchange/**").permitAll()
+
 				).httpBasic(Customizer.withDefaults());
 		
 		return http.build();
@@ -51,8 +54,8 @@ public class ApiGatewayAuthentication {
 	
 	@Bean
 	ReactiveUserDetailsService reactiveUserDetailsService(WebClient.Builder webClientBuilder, BCryptPasswordEncoder encoder) {
-		//WebClient client = webClientBuilder.baseUrl("http://localhost:8770").build();
-		WebClient client = webClientBuilder.baseUrl("http://users-service:8770").build();
+		WebClient client = webClientBuilder.baseUrl("http://localhost:8770").build();
+		//WebClient client = webClientBuilder.baseUrl("http://users-service:8770").build();
 		
 		return user -> client.get()
 				.uri(uriBuilder -> uriBuilder

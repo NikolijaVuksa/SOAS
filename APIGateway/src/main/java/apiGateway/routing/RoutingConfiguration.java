@@ -17,6 +17,7 @@ public class RoutingConfiguration {
 						.uri("lb://currency-conversion"))
 				.route(p -> p.path("/users/**").uri("lb://users-service"))
 				.route(p -> p.path("/accounts/**").uri("lb://bank-account-service"))
+				.route(p -> p.path("/crypto-exchange").uri("lb://crypto-exchange"))
 				.build();
 	}
 }
