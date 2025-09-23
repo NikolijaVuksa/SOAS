@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class CryptoWalletDto {
 
 	private String email;
-	  
+	private String message;
 	private BigDecimal BTC, ETH, UST;
 	
 	public CryptoWalletDto() {
@@ -59,6 +59,15 @@ public class CryptoWalletDto {
 	public void setUST(BigDecimal UST) {
 		this.UST = UST;
 	}
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+        this.message = message;		
+	}
+	
 	
 	public boolean hasEnoughBalance(String currency, BigDecimal amount) {
 	    switch (currency.toUpperCase()) {

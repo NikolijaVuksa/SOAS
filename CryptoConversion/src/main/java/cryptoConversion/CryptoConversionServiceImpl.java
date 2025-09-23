@@ -47,7 +47,7 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 
 	@Override
 	@CircuitBreaker(name = "cb", fallbackMethod = "fallback")
-	public ResponseEntity<CryptoConversionDto> getCryptoConversionFeign(String email, String from, String to, BigDecimal quantity) {
+	public ResponseEntity<CryptoWalletDto> getCryptoConversionFeign(String email, String from, String to, BigDecimal quantity) {
 		if(quantity.compareTo(BigDecimal.valueOf(300,0)) == 1){
 			throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
 		}
@@ -65,9 +65,9 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 		
 		retry.executeSupplier(() -> response = proxy.getCryptoExchangeFeign(from,to).getBody());
 
-		CryptoConversionDto finalResponse = new CryptoConversionDto(response, quantity);
-		finalResponse.setFeign(true);
-		BigDecimal convertedAmount = finalResponse.getConversionResult().getConvertedAmount();
+		CryptoConversionDto conversionResponse = new CryptoConversionDto(response, quantity);
+		conversionResponse.setFeign(true);
+		BigDecimal convertedAmount = conversionResponse.getConversionResult().getConvertedAmount();
 		
 		if (convertedAmount.compareTo(BigDecimal.ZERO) == 0)
 		{
@@ -88,9 +88,9 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 
 	    walletProxy.updateWallet(walletDto);
 	    
-	    finalResponse.setMessage(String.format("Successfully exchanged %s %s for %s %s.", quantity, from, convertedAmount, to));
+	    walletDto.setMessage(String.format("Successfully exchanged %s %s for %s %s.", quantity, from, convertedAmount, to));
 
-	    return ResponseEntity.ok(finalResponse);
+	    return ResponseEntity.ok(walletDto);
 		
 	}
 	

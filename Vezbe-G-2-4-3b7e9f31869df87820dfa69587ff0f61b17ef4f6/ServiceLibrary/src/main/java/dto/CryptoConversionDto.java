@@ -8,7 +8,6 @@ public class CryptoConversionDto {
 	private BigDecimal quantity;
 	private ConversionResult conversionResult;
 	private boolean feign;
-	private String message;
 
 	public CryptoConversionDto() {
 
@@ -87,12 +86,4 @@ public class CryptoConversionDto {
 
 	}
 
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-        this.message = message;		
-	}
 }
