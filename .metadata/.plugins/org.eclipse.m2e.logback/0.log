@@ -7107,3 +7107,400 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 2025-09-22 23:41:04,943 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-22 23:41:05,003 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-22 23:41:05,013 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 00:16:21,274 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:16:21,700 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:16:21,714 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:16:28,849 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:16:28,988 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:16:28,994 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:20:05,249 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:20:05,439 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:20:05,451 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:22:09,173 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:22:09,213 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:22:09,222 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\APIGateway\src\test\resources
+2025-09-23 00:25:54,708 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:25:54,803 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:25:54,809 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:34:04,642 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:34:04,725 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:34:04,730 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:35:11,287 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:35:11,382 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:35:11,391 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:35:16,089 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:35:16,959 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:35:16,969 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:35:57,421 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:35:57,436 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:35:57,443 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:37:01,653 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:37:01,665 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:37:01,672 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:40:02,294 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:40:02,310 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:40:02,324 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:40:41,776 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:40:41,959 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:40:41,970 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:41:17,036 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:41:17,077 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:41:17,089 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:41:42,178 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:41:42,202 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:41:42,244 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:43:45,327 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:43:45,378 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:43:45,392 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:43:50,150 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:43:50,209 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:43:50,222 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:44:20,275 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:44:20,644 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:44:20,650 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:45:07,344 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:45:07,366 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:45:07,371 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 00:47:04,560 [Worker-71: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:05,235 [Worker-71: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:05,983 [Worker-71: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:21,652 [Worker-69: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:22,620 [Worker-69: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:23,501 [Worker-69: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:28,539 [Worker-66: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:29,334 [Worker-66: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:30,236 [Worker-66: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:35,170 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:35,171 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:36,113 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:36,115 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:36,823 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:36,826 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:37,121 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:37,124 [Worker-74: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:37,676 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:37,678 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:38,576 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:38,578 [Worker-72: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:39,283 [Worker-78: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:40,225 [Worker-78: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:41,240 [Worker-78: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:43,825 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:43,828 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:43,860 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:43,862 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:44,899 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:44,900 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:44,903 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:44,904 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:45,935 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:45,937 [Worker-79: Launching currency-exchange - 8000] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:47:45,954 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:47:45,958 [Worker-76: Launching currency-exchange - 8001] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:49:06,513 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:49:06,519 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:49:07,867 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:49:07,871 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:49:08,939 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:49:08,942 [Worker-80: Launching currency-conversion - CurrencyConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 00:49:18,290 [LS-org.eclipse.wildwebdeveloper.xml#listener-1] ERROR reactor.core.publisher.Operators - Operator called default onErrorDropped
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:310)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-09-23 00:50:16,771 [Worker-84: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:50:17,900 [Worker-84: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:50:21,049 [Worker-84: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:51:14,612 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:51:14,615 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:51:14,629 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 00:51:19,549 [Worker-85: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:51:20,145 [Worker-85: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:51:20,757 [Worker-85: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 00:54:52,534 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:54:52,761 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:54:52,824 [Worker-80: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:55:09,694 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:55:09,974 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:55:10,008 [Worker-83: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:55:31,298 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:55:31,330 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:55:31,338 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:55:36,857 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:55:36,868 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:55:36,874 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:55:46,163 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:55:46,217 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:55:46,257 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 00:56:15,249 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:56:15,376 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:56:15,383 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 00:58:31,025 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:58:31,201 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:58:31,211 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 00:59:06,302 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:59:06,338 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:59:06,345 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:59:26,277 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:59:26,300 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:59:26,338 [Worker-81: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 00:59:43,871 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 00:59:43,959 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 00:59:43,965 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 01:01:21,371 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 01:01:21,437 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 01:01:21,445 [Worker-75: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 01:01:54,596 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 01:01:54,609 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 01:01:54,614 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 01:02:02,381 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 01:02:02,429 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 01:02:02,437 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:26:25,029 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-09-23 13:28:06,620 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-23 13:28:27,671 [Worker-8: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:28:32,132 [Worker-6: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:28:39,876 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: soas.crypto-wallet:crypto-wallet:1.0.0 @ C:\Users\Admin\Desktop\SOAS\CryptoWallet\pom.xml.
+2025-09-23 13:28:41,860 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:28:46,822 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CryptoWallet/src/main/java
+2025-09-23 13:28:46,827 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CryptoWallet/src/main/resources
+2025-09-23 13:28:46,831 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CryptoWallet/src/main/resources
+2025-09-23 13:28:46,834 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CryptoWallet/src/test/java
+2025-09-23 13:28:46,838 [Worker-7: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /CryptoWallet/src/test/resources
+2025-09-23 13:28:50,495 [Worker-7: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 38.00 sec, update config takes 4.00 sec 
+2025-09-23 13:28:58,364 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:28:58,482 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:28:58,514 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 13:29:11,767 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:11,769 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier  to /Util/target/classes
+2025-09-23 13:29:12,402 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:12,497 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:12,534 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\CurrencyExchange\src\test\resources
+2025-09-23 13:29:18,320 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:18,321 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier  to /Util/target/classes
+2025-09-23 13:29:18,766 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:18,854 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:29:18,874 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\CurrencyConversion\src\test\resources
+2025-09-23 13:29:22,634 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:23,016 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:23,096 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:23,116 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\UsersService\src\test\resources
+2025-09-23 13:29:24,059 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:24,163 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:24,189 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:29:28,539 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:28,563 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier  to /Util/target/classes
+2025-09-23 13:29:29,048 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:29,131 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:29,176 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoExchange\src\test\resources
+2025-09-23 13:29:32,779 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:32,781 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier  to /Util/target/classes
+2025-09-23 13:29:33,507 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:33,596 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:29:33,609 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:29:38,089 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:38,480 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:38,574 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:38,598 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\BankAccountService\src\test\resources
+2025-09-23 13:29:49,316 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:29:49,827 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:29:49,915 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:29:49,936 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\APIGateway\src\test\resources
+2025-09-23 13:31:09,580 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:31:09,714 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:31:09,747 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 13:34:18,180 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:34:18,241 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:34:18,266 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:34:27,568 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:34:27,690 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:34:27,703 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:35:39,478 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:35:39,494 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:35:39,510 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 13:35:55,909 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:35:55,928 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:35:55,946 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:37:26,740 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:37:26,761 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:37:26,777 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:45:17,348 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:45:17,407 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:45:17,422 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:45:32,621 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:45:32,636 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:45:32,645 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 13:48:26,555 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:48:26,920 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:48:27,040 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:48:39,178 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:48:39,197 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:48:39,209 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:50:17,762 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:50:17,777 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:50:17,786 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:50:54,915 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:50:54,931 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:50:54,946 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:51:05,744 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:51:05,772 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:51:05,786 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:51:10,276 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:51:10,309 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:51:10,320 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:52:26,411 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:52:26,438 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:52:26,452 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 13:52:59,106 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: soas.crypto-wallet:crypto-wallet:1.0.0 @ C:\Users\Admin\Desktop\SOAS\CryptoWallet\pom.xml.
+2025-09-23 13:53:01,166 [Worker-26: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier  to /service-library/target/classes
+2025-09-23 13:53:01,167 [Worker-26: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier  to /Util/target/classes
+2025-09-23 13:53:03,386 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:53:03,388 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:53:03,395 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:53:05,168 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:53:05,213 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:53:05,228 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:53:21,621 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:53:21,639 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:53:21,651 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:54:50,720 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:54:50,737 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:54:50,754 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoWallet\src\test\resources
+2025-09-23 13:55:26,830 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:55:26,844 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:55:26,857 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 13:55:45,152 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:55:45,170 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:55:45,184 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 13:57:36,675 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 13:57:36,691 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 13:57:36,768 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:00:06,485 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:00:06,502 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:00:06,512 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 14:00:42,142 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:00:42,188 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:00:42,239 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:04:24,696 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:04:24,721 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:04:24,736 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:04:29,812 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:04:29,829 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:04:29,842 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:09:44,563 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:09:44,581 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:09:44,590 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:12:16,791 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:12:16,805 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:12:16,815 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 14:14:42,210 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:14:42,225 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:14:42,234 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:15:03,033 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:15:03,065 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:15:03,073 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:17:07,137 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:17:07,314 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:17:07,328 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:18:05,313 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:18:05,435 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:18:05,450 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 14:18:28,457 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:18:28,477 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:18:28,488 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Vezbe-G-2-4-3b7e9f31869df87820dfa69587ff0f61b17ef4f6\ServiceLibrary\src\test\resources
+2025-09-23 14:18:46,423 [Worker-43: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:18:48,167 [Worker-43: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:18:50,208 [Worker-48: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:18:50,636 [Worker-43: Launching APIGateway - ApiGatewayApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:18:52,237 [Worker-48: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:18:53,979 [Worker-48: Launching UsersService - UsersServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:20:59,381 [Worker-44: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:00,417 [Worker-44: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:01,525 [Worker-44: Launching BankAccountService - BankAccountServiceApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:07,680 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:07,682 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:08,815 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:08,818 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:10,171 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:10,175 [Worker-33: Launching CryptoWallet - CryptoWalletApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:10,946 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:10,949 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:12,396 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:12,400 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:13,449 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:13,452 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:14,080 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:14,083 [Worker-54: Launching CryptoConversion - CryptoConversionApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:14,711 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:14,715 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:21:16,021 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:21:16,023 [Worker-33: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:28:41,152 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:28:41,168 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:28:41,184 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoExchange\src\test\resources
+2025-09-23 14:30:02,457 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:30:02,460 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:30:03,353 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:30:03,354 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:30:04,012 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/service-library: soas.service-library:service-library:1.0.0 with classifier null to /service-library/target/classes
+2025-09-23 14:30:04,015 [Worker-53: Launching CryptoExchange - CryptoExchangeApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Util: soas.util:Util:1.0.0 with classifier null to /Util/target/classes
+2025-09-23 14:40:00,038 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:40:00,197 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:40:00,204 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:41:36,066 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:41:36,133 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:41:36,147 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:43:18,825 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:43:18,839 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:43:18,849 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:45:28,740 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:45:28,759 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:45:28,764 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:45:30,488 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:45:30,502 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:45:30,507 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:46:35,317 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:46:35,374 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:46:35,381 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:47:52,023 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:47:52,039 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:47:52,048 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:47:58,004 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:47:58,016 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:47:58,023 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:48:17,929 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:48:17,940 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:48:17,944 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:48:26,538 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:48:26,592 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:48:26,641 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:48:38,113 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:48:38,123 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:48:38,128 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:51:28,252 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:51:28,289 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:51:28,303 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:52:02,438 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:52:02,532 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:52:02,541 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:53:09,108 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:53:09,131 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:53:09,139 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:54:52,573 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:54:52,600 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:54:52,612 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\CryptoConversion\src\test\resources
+2025-09-23 14:56:40,666 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:56:40,725 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:56:40,735 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources
+2025-09-23 14:59:37,134 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-23 14:59:37,162 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-23 14:59:37,168 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\Desktop\SOAS\Util\src\test\resources

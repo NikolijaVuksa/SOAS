@@ -17,7 +17,7 @@ public class UserEmailHeaderForAccount {
 	        .flatMap(securityContext -> {
 	            Authentication auth = securityContext.getAuthentication();
 	            if (auth != null && auth.getPrincipal() instanceof User userDetails) {
-	                String email = userDetails.getUsername(); // kod tebe username = email
+	                String email = userDetails.getUsername(); 
 	                var mutatedExchange = exchange.mutate()
 	                    .request(r -> r.headers(h -> h.set("X-User-Email", email)))
 	                    .build();

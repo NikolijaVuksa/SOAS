@@ -20,7 +20,7 @@ public interface CryptoWalletService {
     List<CryptoWalletDto> getAllWallets();
 
     @GetMapping("/wallets/myWallet")
-    ResponseEntity<?> getMyWallet(@RequestHeader("X-User-Email") String email);
+    ResponseEntity<CryptoWalletDto> getMyWallet(@RequestHeader("X-User-Email") String email);
 
     @PostMapping("/wallets/newWallet")
     ResponseEntity<?> createWallet(@RequestBody CryptoWalletDto dto);

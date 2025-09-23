@@ -60,5 +60,19 @@ public class CryptoWalletDto {
 		this.UST = UST;
 	}
 	
+	public boolean hasEnoughBalance(String currency, BigDecimal amount) {
+	    switch (currency.toUpperCase()) {
+	        case "BTC":
+	            return this.BTC.compareTo(amount) >= 0;
+	        case "ETH":
+	            return this.ETH.compareTo(amount) >= 0;
+	        case "UST":
+	            return this.UST.compareTo(amount) >= 0;
+	        default:
+	            throw new IllegalArgumentException("Unsupported currency: " + currency);
+	    }
+	}
+
+
 	
 }

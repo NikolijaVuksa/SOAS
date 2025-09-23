@@ -8,6 +8,7 @@ public class CryptoConversionDto {
 	private BigDecimal quantity;
 	private ConversionResult conversionResult;
 	private boolean feign;
+	private String message;
 
 	public CryptoConversionDto() {
 
@@ -55,7 +56,7 @@ public class CryptoConversionDto {
 	}
 
 
-	private class ConversionResult {
+	public class ConversionResult {
 		private String to;
 		private BigDecimal convertedAmount;
 
@@ -84,5 +85,14 @@ public class CryptoConversionDto {
 			this.convertedAmount = convertedAmount;
 		}
 
+	}
+
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+        this.message = message;		
 	}
 }

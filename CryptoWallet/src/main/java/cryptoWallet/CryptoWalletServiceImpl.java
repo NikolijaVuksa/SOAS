@@ -13,6 +13,7 @@ import api.services.CryptoWalletService;
 
 import dto.CryptoWalletDto;
 import dto.UserDto;
+import util.exceptions.WalletNotFoundException;
 
 @RestController
 public class CryptoWalletServiceImpl implements CryptoWalletService {
@@ -35,12 +36,11 @@ public class CryptoWalletServiceImpl implements CryptoWalletService {
 
     
     @Override
-    public ResponseEntity<?> getMyWallet(String email) {
+    public ResponseEntity<CryptoWalletDto> getMyWallet(String email) {
     	CryptoWallet wallet = repo.findByEmail(email);
 
         if (wallet == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                                 .body("No crypto wallet found for user: " + email);
+            throw new WalletNotFoundException(String.format("Crypto wallet for user %s not found", email));
         }
 
         CryptoWalletDto dto = convertModelToDto(wallet);

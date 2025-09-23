@@ -39,11 +39,22 @@ public class GlobalExceptionHandler {
 
 	}
 	
+	@ExceptionHandler(WalletNotFoundException.class)
+	public ResponseEntity<?> handleWalletNotFound(WalletNotFoundException ex){
+	    return ResponseEntity.status(HttpStatus.NOT_FOUND)
+	            .body(new ExceptionModel(ex.getMessage(), "No crypto wallet found for the user", HttpStatus.NOT_FOUND));
+	}
 
+	@ExceptionHandler(InvalidConversionResultException.class)
+	public ResponseEntity<?> handleInvalidConversion(InvalidConversionResultException ex){
+	    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+	            .body(new ExceptionModel(ex.getMessage(), "Please check if you entered a valid amount and supported currencies", HttpStatus.BAD_REQUEST));
+	}
 	
-	/*public String fineTuneMessage(String message) {
-		String[] partsOfTheMessage = message.split("\"");
-		return partsOfTheMessage[4];
-		
-	}*/
+	@ExceptionHandler(NotEnoughFundsException.class)
+	public ResponseEntity<?> handleNotEnoughFunds(NotEnoughFundsException ex){
+	    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+	            .body(new ExceptionModel(ex.getMessage(), "Please check your funds in crypto wallet", HttpStatus.BAD_REQUEST));
+	}
+	
 }
