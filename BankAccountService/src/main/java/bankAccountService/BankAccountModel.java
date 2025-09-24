@@ -23,12 +23,12 @@ public class BankAccountModel {
 	@Column(nullable = false, unique = true)
     private String email;
 
-	private BigDecimal eur = BigDecimal.ZERO;
-    private BigDecimal usd = BigDecimal.ZERO;
-    private BigDecimal chf = BigDecimal.ZERO;
-    private BigDecimal gbp = BigDecimal.ZERO;
-    private BigDecimal cad = BigDecimal.ZERO;
-    private BigDecimal rsd = BigDecimal.ZERO;
+	private BigDecimal EUR = BigDecimal.ZERO;
+    private BigDecimal USD = BigDecimal.ZERO;
+    private BigDecimal CHF = BigDecimal.ZERO;
+    private BigDecimal GBP = BigDecimal.ZERO;
+    private BigDecimal CAD = BigDecimal.ZERO;
+    private BigDecimal RSD = BigDecimal.ZERO;
 	
 	public BankAccountModel() {
 		
@@ -37,29 +37,29 @@ public class BankAccountModel {
 	public BankAccountModel(String email) {
 		this.email = email;
 	}
-	public BankAccountModel(int id, String email, BigDecimal eur, BigDecimal usd, BigDecimal chf, BigDecimal gbp, BigDecimal cad,
-			BigDecimal rsd) {
+	public BankAccountModel(int id, String email, BigDecimal EUR, BigDecimal USD, BigDecimal CHF, BigDecimal GBP, BigDecimal CAD,
+			BigDecimal RSD) {
 		super();
 		this.id = id;
 		this.email = email;
-		this.eur = eur;
-		this.usd = usd;
-		this.chf = chf;
-		this.gbp = gbp;
-		this.cad = cad;
-		this.rsd = rsd;
+		this.EUR = EUR;
+		this.USD = USD;
+		this.CHF = CHF;
+		this.GBP = GBP;
+		this.CAD = CAD;
+		this.RSD = RSD;
 	}
 	
-	public BankAccountModel(String email, BigDecimal eur, BigDecimal usd, BigDecimal chf, BigDecimal gbp,
-			BigDecimal cad, BigDecimal rsd) {
+	public BankAccountModel(String email, BigDecimal EUR, BigDecimal USD, BigDecimal CHF, BigDecimal GBP,
+			BigDecimal CAD, BigDecimal RSD) {
 		super();
 		this.email = email;
-		this.eur = eur;
-		this.usd = usd;
-		this.chf = chf;
-		this.gbp = gbp;
-		this.cad = cad;
-		this.rsd = rsd;
+		this.EUR = EUR;
+		this.USD = USD;
+		this.CHF = CHF;
+		this.GBP = GBP;
+		this.CAD = CAD;
+		this.RSD = RSD;
 	}
 	public String getEmail() {
 		return email;
@@ -73,41 +73,41 @@ public class BankAccountModel {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public BigDecimal getEur() {
-		return eur;
+	public BigDecimal getEUR() {
+		return EUR;
 	}
-	public void setEur(BigDecimal eur) {
-		this.eur = eur;
+	public void setEUR(BigDecimal EUR) {
+		this.EUR = EUR;
 	}
-	public BigDecimal getUsd() {
-		return usd;
+	public BigDecimal getUSD() {
+		return USD;
 	}
-	public void setUsd(BigDecimal usd) {
-		this.usd = usd;
+	public void setUSD(BigDecimal USD) {
+		this.USD = USD;
 	}
-	public BigDecimal getChf() {
-		return chf;
+	public BigDecimal getCHF() {
+		return CHF;
 	}
-	public void setChf(BigDecimal chf) {
-		this.chf = chf;
+	public void setCHF(BigDecimal CHF) {
+		this.CHF = CHF;
 	}
-	public BigDecimal getGbp() {
-		return gbp;
+	public BigDecimal getGBP() {
+		return GBP;
 	}
-	public void setGbp(BigDecimal gbp) {
-		this.gbp = gbp;
+	public void setGBP(BigDecimal GBP) {
+		this.GBP = GBP;
 	}
-	public BigDecimal getCad() {
-		return cad;
+	public BigDecimal getCAD() {
+		return CAD;
 	}
-	public void setCad(BigDecimal cad) {
-		this.cad = cad;
+	public void setCAD(BigDecimal CAD) {
+		this.CAD = CAD;
 	}
-	public BigDecimal getRsd() {
-		return rsd;
+	public BigDecimal getRSD() {
+		return RSD;
 	}
-	public void setRsd(BigDecimal rsd) {
-		this.rsd = rsd;
+	public void setRSD(BigDecimal RSD) {
+		this.RSD = RSD;
 	}
 
 }

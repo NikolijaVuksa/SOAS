@@ -40,7 +40,7 @@ public class CryptoWalletServiceImpl implements CryptoWalletService {
     	CryptoWallet wallet = repo.findByEmail(email);
 
         if (wallet == null) {
-            throw new WalletNotFoundException(String.format("Crypto wallet for user %s not found", email));
+        	return null;
         }
 
         CryptoWalletDto dto = convertModelToDto(wallet);

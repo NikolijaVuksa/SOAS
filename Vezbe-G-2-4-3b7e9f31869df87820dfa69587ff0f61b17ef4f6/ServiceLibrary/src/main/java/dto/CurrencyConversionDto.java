@@ -55,7 +55,7 @@ public class CurrencyConversionDto {
 	}
 
 
-	private class ConversionResult {
+	public class ConversionResult {
 		private String to;
 		private BigDecimal convertedAmount;
 

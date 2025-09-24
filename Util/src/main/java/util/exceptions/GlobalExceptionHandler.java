@@ -1,5 +1,6 @@
 package util.exceptions;
 
+import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingServletRequestParameterException;
@@ -42,7 +43,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(WalletNotFoundException.class)
 	public ResponseEntity<?> handleWalletNotFound(WalletNotFoundException ex){
 	    return ResponseEntity.status(HttpStatus.NOT_FOUND)
-	            .body(new ExceptionModel(ex.getMessage(), "No crypto wallet found for the user", HttpStatus.NOT_FOUND));
+	            .body(new ExceptionModel(ex.getMessage(), "Please create a crypto wallet before attempting crypto conversion", HttpStatus.NOT_FOUND));
 	}
 
 	@ExceptionHandler(InvalidConversionResultException.class)
@@ -54,7 +55,13 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(NotEnoughFundsException.class)
 	public ResponseEntity<?> handleNotEnoughFunds(NotEnoughFundsException ex){
 	    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-	            .body(new ExceptionModel(ex.getMessage(), "Please check your funds in crypto wallet", HttpStatus.BAD_REQUEST));
+	            .body(new ExceptionModel(ex.getMessage(), "Please check your funds", HttpStatus.BAD_REQUEST));
+	}
+	
+	@ExceptionHandler(BankAccountNotFoundException.class)
+	public ResponseEntity<?> handleBankAccountNotFound(BankAccountNotFoundException ex){
+		return ResponseEntity.status(HttpStatus.NOT_FOUND)
+	            .body(new ExceptionModel(ex.getMessage(), "Please create a bank account before attempting currency conversion", HttpStatus.NOT_FOUND));
 	}
 	
 }

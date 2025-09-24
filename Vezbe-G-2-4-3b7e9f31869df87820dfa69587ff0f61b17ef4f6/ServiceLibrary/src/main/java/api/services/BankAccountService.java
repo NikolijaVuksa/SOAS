@@ -14,7 +14,7 @@ public interface BankAccountService {
     List<BankAccountDto> getAllAccounts();
 
     @GetMapping("/accounts/myAccount")
-    ResponseEntity<?> getMyAccount(@RequestHeader("X-User-Email") String email);
+    ResponseEntity<BankAccountDto> getMyAccount(@RequestHeader("X-User-Email") String email);
 
     @PostMapping("/accounts/newAccount")
     ResponseEntity<?> createAccount(@RequestBody BankAccountDto dto);

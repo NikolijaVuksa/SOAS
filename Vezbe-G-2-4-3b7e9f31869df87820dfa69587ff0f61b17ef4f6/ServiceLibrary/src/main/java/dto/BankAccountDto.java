@@ -6,7 +6,9 @@ public class BankAccountDto {
 	
 	private String email;
 	  
-	private BigDecimal eur, usd, chf, gbp, cad, rsd;
+	private BigDecimal EUR, USD, CHF, GBP, CAD, RSD;
+	
+	private String message;
 	
 	public BankAccountDto() {
 		
@@ -14,26 +16,26 @@ public class BankAccountDto {
 	 
 	public BankAccountDto(String email) {
         this.email = email;
-        this.eur = BigDecimal.ZERO;
-        this.usd = BigDecimal.ZERO;
-        this.rsd = BigDecimal.ZERO;
-        this.chf = BigDecimal.ZERO;
-        this.cad = BigDecimal.ZERO;
-        this.gbp = BigDecimal.ZERO;
+        this.EUR = BigDecimal.ZERO;
+        this.USD = BigDecimal.ZERO;
+        this.RSD = BigDecimal.ZERO;
+        this.CHF = BigDecimal.ZERO;
+        this.CAD = BigDecimal.ZERO;
+        this.GBP = BigDecimal.ZERO;
     }
 	
 	
 	
-	public BankAccountDto(String email, BigDecimal eur, BigDecimal usd, BigDecimal chf, BigDecimal gbp, BigDecimal cad,
-			BigDecimal rsd) {
+	public BankAccountDto(String email, BigDecimal EUR, BigDecimal USD, BigDecimal CHF, BigDecimal GBP, BigDecimal CAD,
+			BigDecimal RSD) {
 		super();
 		this.email = email;
-		this.eur = eur;
-		this.usd = usd;
-		this.chf = chf;
-		this.gbp = gbp;
-		this.cad = cad;
-		this.rsd = rsd;
+		this.EUR = EUR;
+		this.USD = USD;
+		this.CHF = CHF;
+		this.GBP = GBP;
+		this.CAD = CAD;
+		this.RSD = RSD;
 	}
 
 	public String getEmail() {
@@ -44,53 +46,82 @@ public class BankAccountDto {
 		this.email = email;
 	}
 
-	public BigDecimal getEur() {
-		return eur;
+	public BigDecimal getEUR() {
+		return EUR;
 	}
 
-	public void setEur(BigDecimal eur) {
-		this.eur = eur;
+	public void setEUR(BigDecimal EUR) {
+		this.EUR = EUR;
 	}
 
-	public BigDecimal getUsd() {
-		return usd;
+	public BigDecimal getUSD() {
+		return USD;
 	}
 
-	public void setUsd(BigDecimal usd) {
-		this.usd = usd;
+	public void setUSD(BigDecimal USD) {
+		this.USD = USD;
 	}
 
-	public BigDecimal getChf() {
-		return chf;
+	public BigDecimal getCHF() {
+		return CHF;
 	}
 
-	public void setChf(BigDecimal chf) {
-		this.chf = chf;
+	public void setCHF(BigDecimal CHF) {
+		this.CHF = CHF;
 	}
 
-	public BigDecimal getGbp() {
-		return gbp;
+	public BigDecimal getGBP() {
+		return GBP;
 	}
 
-	public void setGbp(BigDecimal gbp) {
-		this.gbp = gbp;
+	public void setGBP(BigDecimal GBP) {
+		this.GBP = GBP;
 	}
 
-	public BigDecimal getCad() {
-		return cad;
+	public BigDecimal getCAD() {
+		return CAD;
 	}
 
-	public void setCad(BigDecimal cad) {
-		this.cad = cad;
+	public void setCAD(BigDecimal CAD) {
+		this.CAD = CAD;
 	}
 
-	public BigDecimal getRsd() {
-		return rsd;
+	public BigDecimal getRSD() {
+		return RSD;
 	}
 
-	public void setRsd(BigDecimal rsd) {
-		this.rsd = rsd;
+	public void setRSD(BigDecimal RSD) {
+		this.RSD = RSD;
 	}
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+        this.message = message;		
+	}
+	
+	
+	public boolean hasEnoughBalance(String currency, BigDecimal amount) {
+	    switch (currency) {
+	        case "EUR":
+	            return this.EUR.compareTo(amount) >= 0;
+	        case "USD":
+	            return this.USD.compareTo(amount) >= 0;
+	        case "CHF":
+	            return this.CHF.compareTo(amount) >= 0;
+	        case "GBP":
+	            return this.GBP.compareTo(amount) >= 0;
+	        case "CAD":
+	            return this.CAD.compareTo(amount) >= 0;
+	        case "RSD":
+	            return this.RSD.compareTo(amount) >= 0;
+	        default:
+	        	return false;
+	    }
+	}
+
 
 }
 

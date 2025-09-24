@@ -25,6 +25,7 @@ import io.github.resilience4j.retry.RetryRegistry;
 import util.exceptions.InvalidConversionResultException;
 import util.exceptions.InvalidQuantityException;
 import util.exceptions.NotEnoughFundsException;
+import util.exceptions.WalletNotFoundException;
 
 @RestController
 public class CryptoConversionServiceImpl implements CryptoConversionService{
@@ -56,11 +57,11 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 		CryptoWalletDto walletDto = wallet.getBody();
 		
 		if (walletDto == null) {
-		    throw new RuntimeException("Crypto wallet doesn't exist");
+		    throw new WalletNotFoundException(String.format("Bank account doesn't exist for user with email: %s", email));
 		}
 		
 		if (!walletDto.hasEnoughBalance(from, quantity)) {
-		    throw new NotEnoughFundsException(String.format("Not enough funds in wallet to exchange %s to %: ", from, to));
+		    throw new NotEnoughFundsException(String.format("Not enough funds in wallet to exchange %s to %s", from, to));
 		}
 		
 		retry.executeSupplier(() -> response = proxy.getCryptoExchangeFeign(from,to).getBody());

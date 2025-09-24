@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import api.proxies.UsersServiceProxy;
 import api.services.BankAccountService;
 import dto.BankAccountDto;
+import dto.CryptoWalletDto;
 import dto.UserDto;
+import util.exceptions.BankAccountNotFoundException;
+import util.exceptions.WalletNotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,43 +34,20 @@ public class BankAccountServiceImpl implements BankAccountService {
 		}
 		return dtos;
     }
-
-    /*@Override
-    public ResponseEntity<?> getMyAccount(String email) {
-        BankAccountModel account = repo.findByEmail(email);
-        return account != null ? convertModelToDto(account) : null;
-    }*/
     
     @Override
-    public ResponseEntity<?> getMyAccount(String email) {
+    public ResponseEntity<BankAccountDto> getMyAccount(String email) {
         BankAccountModel account = repo.findByEmail(email);
 
+
         if (account == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                                 .body("No account found for user: " + email);
+            return null;
         }
 
         BankAccountDto dto = convertModelToDto(account);
         return ResponseEntity.ok(dto);
     }
 
-
-    /*@Override
-    public ResponseEntity<?> createAccount(String email) {
-        UserDto user = usersProxy.getUserByEmail(email);
-        if (user == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found");
-        }
-        if (!"USER".equals(user.getRole())) {
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Only USER role can have bank account");
-        }
-        if (repo.findByEmail(email) != null) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body("Account already exists");
-        }
-
-        BankAccountModel account = new BankAccountModel(email);
-        return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(account));
-    }*/
     
     @Override
     public ResponseEntity<?> createAccount(BankAccountDto dto) {
@@ -89,7 +69,7 @@ public class BankAccountServiceImpl implements BankAccountService {
                                  .body("Account already exists");
         }
 
-        BankAccountModel account = new BankAccountModel(email,dto.getEur(),dto.getUsd(),dto.getChf(),dto.getGbp(),dto.getCad(),dto.getRsd());
+        BankAccountModel account = new BankAccountModel(email,dto.getEUR(),dto.getUSD(),dto.getCHF(),dto.getGBP(),dto.getCAD(),dto.getRSD());
         return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(account));
     }
 
@@ -99,12 +79,12 @@ public class BankAccountServiceImpl implements BankAccountService {
         if (account == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Account not found");
         }
-        account.setEur(dto.getEur());
-        account.setUsd(dto.getUsd());
-        account.setRsd(dto.getRsd());
-        account.setChf(dto.getChf());
-        account.setCad(dto.getCad());
-        account.setGbp(dto.getGbp());
+        account.setEUR(dto.getEUR());
+        account.setUSD(dto.getUSD());
+        account.setRSD(dto.getRSD());
+        account.setCHF(dto.getCHF());
+        account.setCAD(dto.getCAD());
+        account.setGBP(dto.getGBP());
         return ResponseEntity.ok(repo.save(account));
     }
 
@@ -124,12 +104,12 @@ public class BankAccountServiceImpl implements BankAccountService {
 
     private BankAccountDto convertModelToDto(BankAccountModel model) {
         BankAccountDto dto = new BankAccountDto(model.getEmail());
-        dto.setEur(model.getEur());
-        dto.setUsd(model.getUsd());
-        dto.setRsd(model.getRsd());
-        dto.setChf(model.getChf());
-        dto.setCad(model.getCad());
-        dto.setGbp(model.getGbp());
+        dto.setEUR(model.getEUR());
+        dto.setUSD(model.getUSD());
+        dto.setRSD(model.getRSD());
+        dto.setCHF(model.getCHF());
+        dto.setCAD(model.getCAD());
+        dto.setGBP(model.getGBP());
         return dto;
     }
 }

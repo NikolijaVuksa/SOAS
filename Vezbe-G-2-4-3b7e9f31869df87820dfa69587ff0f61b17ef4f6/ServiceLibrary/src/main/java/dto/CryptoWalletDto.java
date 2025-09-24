@@ -78,7 +78,7 @@ public class CryptoWalletDto {
 	        case "UST":
 	            return this.UST.compareTo(amount) >= 0;
 	        default:
-	            throw new IllegalArgumentException("Unsupported currency: " + currency);
+	        	return false;
 	    }
 	}
 
