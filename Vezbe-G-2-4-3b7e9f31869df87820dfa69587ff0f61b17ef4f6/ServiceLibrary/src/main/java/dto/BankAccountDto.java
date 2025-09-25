@@ -103,22 +103,56 @@ public class BankAccountDto {
 	}
 	
 	
-	public boolean hasEnoughBalance(String currency, BigDecimal amount) {
+	public boolean hasEnoughBalance(String currency, BigDecimal quantity) {
 	    switch (currency) {
 	        case "EUR":
-	            return this.EUR.compareTo(amount) >= 0;
+	            return this.EUR.compareTo(quantity) >= 0;
 	        case "USD":
-	            return this.USD.compareTo(amount) >= 0;
+	            return this.USD.compareTo(quantity) >= 0;
 	        case "CHF":
-	            return this.CHF.compareTo(amount) >= 0;
+	            return this.CHF.compareTo(quantity) >= 0;
 	        case "GBP":
-	            return this.GBP.compareTo(amount) >= 0;
+	            return this.GBP.compareTo(quantity) >= 0;
 	        case "CAD":
-	            return this.CAD.compareTo(amount) >= 0;
+	            return this.CAD.compareTo(quantity) >= 0;
 	        case "RSD":
-	            return this.RSD.compareTo(amount) >= 0;
+	            return this.RSD.compareTo(quantity) >= 0;
 	        default:
 	        	return false;
+	    }
+	}
+	
+	public void subtractBalance(String currency, BigDecimal quantity) {
+		switch (currency) {
+        case "EUR": 
+        	this.setEUR(this.getEUR().subtract(quantity)); break;
+        case "USD": 
+        	this.setUSD(this.getUSD().subtract(quantity)); break;
+        case "CHF": 
+        	this.setCHF(this.getCHF().subtract(quantity)); break;
+        case "GBP": 
+        	this.setGBP(this.getGBP().subtract(quantity)); break;
+        case "CAD": 
+        	this.setCAD(this.getCAD().subtract(quantity)); break;
+        case "RSD": 
+        	this.setRSD(this.getRSD().subtract(quantity)); break;
+		}
+	}
+	
+	public void addBalance(String currency, BigDecimal convertedAmount) {
+		 switch (currency) {
+	        case "EUR": 
+	        	this.setEUR(this.getEUR().add(convertedAmount)); break;
+	        case "USD": 
+	        	this.setUSD(this.getUSD().add(convertedAmount)); break;
+	        case "CHF": 
+	        	this.setCHF(this.getCHF().add(convertedAmount)); break;
+	        case "GBP": 
+	        	this.setGBP(this.getGBP().add(convertedAmount)); break;
+	        case "CAD": 
+	        	this.setCAD(this.getCAD().add(convertedAmount)); break;
+	        case "RSD": 
+	        	this.setRSD(this.getRSD().add(convertedAmount)); break;
 	    }
 	}
 

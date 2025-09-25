@@ -30,8 +30,6 @@ import util.exceptions.WalletNotFoundException;
 @RestController
 public class CryptoConversionServiceImpl implements CryptoConversionService{
 	
-	private RestTemplate template = new RestTemplate(); // promeniti jer nije dozvoljeno
-	
 	@Autowired
 	private CryptoExchangeProxy proxy;
 	
@@ -57,7 +55,7 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 		CryptoWalletDto walletDto = wallet.getBody();
 		
 		if (walletDto == null) {
-		    throw new WalletNotFoundException(String.format("Bank account doesn't exist for user with email: %s", email));
+		    throw new WalletNotFoundException(String.format("Crypto wallet doesn't exist for user with email: %s", email));
 		}
 		
 		if (!walletDto.hasEnoughBalance(from, quantity)) {
@@ -75,17 +73,8 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 			throw new InvalidConversionResultException(String.format("Conversion from %s to %s resulted in 0. Transaction not allowed.", from, to));		
 		}
 		
-		switch (from) {
-	        case "BTC": walletDto.setBTC(walletDto.getBTC().subtract(quantity)); break;
-	        case "ETH": walletDto.setETH(walletDto.getETH().subtract(quantity)); break;
-	        case "UST": walletDto.setUST(walletDto.getUST().subtract(quantity)); break;
-	    }
-
-	    switch (to) {
-	        case "BTC": walletDto.setBTC(walletDto.getBTC().add(convertedAmount)); break;
-	        case "ETH": walletDto.setETH(walletDto.getETH().add(convertedAmount)); break;
-	        case "UST": walletDto.setUST(walletDto.getUST().add(convertedAmount)); break;
-	    }
+		walletDto.subtractBalance(from, quantity);
+		walletDto.addBalance(to, convertedAmount);
 
 	    walletProxy.updateWallet(walletDto);
 	    
@@ -102,12 +91,15 @@ public class CryptoConversionServiceImpl implements CryptoConversionService{
 	
 	@Override
 	public ResponseEntity<?> getCryptoConversion(String email,String from, String to, BigDecimal quantity) {
-		if(quantity.compareTo(BigDecimal.valueOf(300,0)) == 1){
-			throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
-		}
-		String endPoint = "http://localhost:8400/crypto-exchange?from=" + from + "&to=" + to;
-		ResponseEntity<CryptoExchangeDto> response = template.getForEntity(endPoint, CryptoExchangeDto.class);		
-		return ResponseEntity.ok(new CryptoConversionDto(response.getBody(), quantity));
+		if (quantity.compareTo(BigDecimal.valueOf(300, 0)) > 0) {
+	        throw new InvalidQuantityException(
+	            String.format("Quantity of %s is too large", quantity));
+	    }
+
+	    ResponseEntity<CryptoExchangeDto> response = proxy.getCryptoExchangeFeign(from, to);
+
+	    CryptoConversionDto conversionResponse = new CryptoConversionDto(response.getBody(), quantity);
+	    return ResponseEntity.ok(conversionResponse);
 	}
 
 

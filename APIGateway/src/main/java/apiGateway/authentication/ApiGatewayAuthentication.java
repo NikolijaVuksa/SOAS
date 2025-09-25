@@ -53,6 +53,8 @@ public class ApiGatewayAuthentication {
 	            
 	            .pathMatchers("/crypto-conversion/**").hasRole("USER")
 
+	            .pathMatchers("/trade-currency/**").hasRole("USER")
+
 
 				).httpBasic(Customizer.withDefaults());
 		

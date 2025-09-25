@@ -23,6 +23,10 @@ public class RoutingConfiguration {
 				.route(p -> p.path("/crypto-conversion")
 						.filters(f -> f.rewritePath("/crypto-conversion", "/crypto-conversion-feign"))
 						.uri("lb://crypto-conversion"))
+				.route(p -> p.path("/trade-currency").uri("lb://trade-currency"))
+				/*.route(p -> p.path("/trade-currency")
+						.filters(f -> f.rewritePath("/trade-currency", "/trade-currency-feign"))
+						.uri("lb://trade-currency"))*/
 				.build();
 	}
 }

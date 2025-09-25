@@ -1,5 +1,7 @@
 package api.services;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,4 +12,7 @@ public interface CurrencyExchangeService {
 
 	@GetMapping("/currency-exchange")
 	ResponseEntity<?> getCurrencyExchange(@RequestParam String from, @RequestParam String to);
+	
+	@GetMapping("/currency-exchange/currencies")
+	public ResponseEntity<List<String>> getAllCurrencies();
 }

@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -28,8 +30,6 @@ import util.exceptions.NotEnoughFundsException;
 
 @RestController
 public class CurrencyConversionServiceImpl implements CurrencyConversionService {
-
-	private RestTemplate template = new RestTemplate();
 	
 	@Autowired
 	private CurrencyExchangeProxy proxy;
@@ -46,18 +46,10 @@ public class CurrencyConversionServiceImpl implements CurrencyConversionService 
 
 	@Override
 	@CircuitBreaker(name = "cb", fallbackMethod = "fallback")
-	public ResponseEntity<?> getConversionFeign(String email, String from, String to, BigDecimal quantity) {
-		/*if(quantity.compareTo(BigDecimal.valueOf(300,0)) == 1){
-			throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
-		}
-		
-		retry.executeSupplier(() -> response = proxy.getExchangeFeign(from,to).getBody());
+	public ResponseEntity<?> getConversionFeign(String email, String from, String to, BigDecimal quantity, String internalCall) {
+		boolean isInternal = "true".equalsIgnoreCase(internalCall);
 
-		CurrencyConversionDto finalResponse = new CurrencyConversionDto(response, quantity);
-		finalResponse.setFeign(true);
-		
-		return ResponseEntity.ok(finalResponse);*/
-		if(quantity.compareTo(BigDecimal.valueOf(300,0)) == 1){
+	    if (!isInternal && quantity.compareTo(BigDecimal.valueOf(300)) > 0) {
 			throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
 		}
 		
@@ -83,23 +75,9 @@ public class CurrencyConversionServiceImpl implements CurrencyConversionService 
 			throw new InvalidConversionResultException(String.format("Conversion from %s to %s resulted in 0. Transaction not allowed.", from, to));		
 		}
 		
-		switch (from) {
-	        case "EUR": accountDto.setEUR(accountDto.getEUR().subtract(quantity)); break;
-	        case "USD": accountDto.setUSD(accountDto.getUSD().subtract(quantity)); break;
-	        case "CHF": accountDto.setCHF(accountDto.getCHF().subtract(quantity)); break;
-	        case "GBP": accountDto.setGBP(accountDto.getGBP().subtract(quantity)); break;
-	        case "CAD": accountDto.setCAD(accountDto.getCAD().subtract(quantity)); break;
-	        case "RSD": accountDto.setRSD(accountDto.getRSD().subtract(quantity)); break;
-	    }
+		accountDto.subtractBalance(from, quantity);
+		accountDto.addBalance(to, convertedAmount);
 
-	    switch (to) {
-	        case "EUR": accountDto.setEUR(accountDto.getEUR().add(convertedAmount)); break;
-	        case "USD": accountDto.setUSD(accountDto.getUSD().add(convertedAmount)); break;
-	        case "CHF": accountDto.setCHF(accountDto.getCHF().add(convertedAmount)); break;
-	        case "GBP": accountDto.setGBP(accountDto.getGBP().add(convertedAmount)); break;
-	        case "CAD": accountDto.setCAD(accountDto.getCAD().add(convertedAmount)); break;
-	        case "RSD": accountDto.setRSD(accountDto.getRSD().add(convertedAmount)); break;
-	    }
 
 	    accProxy.updateAccount(accountDto);
 	    
@@ -114,13 +92,16 @@ public class CurrencyConversionServiceImpl implements CurrencyConversionService 
 	}
 	
 	@Override
-	public ResponseEntity<?> getConversion(String from, String to, BigDecimal quantity) {
-		if(quantity.compareTo(BigDecimal.valueOf(300,0)) == 1){
-			throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
-		}
-		String endPoint = "http://localhost:8000/currency-exchange?from=" + from + "&to=" + to;
-		ResponseEntity<CurrencyExchangeDto> response = template.getForEntity(endPoint, CurrencyExchangeDto.class);		
-		return ResponseEntity.ok(new CurrencyConversionDto(response.getBody(), quantity));
+	public ResponseEntity<CurrencyConversionDto> getConversion(String from,  String to, BigDecimal quantity, String internalCall){
+		boolean isInternal = "true".equalsIgnoreCase(internalCall);
+
+	    if (!isInternal && quantity.compareTo(BigDecimal.valueOf(300)) > 0) {
+            throw new InvalidQuantityException(String.format("Quantity of %s is too large", quantity));
+        }
+
+        ResponseEntity<CurrencyExchangeDto> response = proxy.getExchangeFeign(from, to);
+        
+        return ResponseEntity.ok(new CurrencyConversionDto(response.getBody(), quantity));
 	}
 
 }

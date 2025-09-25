@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(WalletNotFoundException.class)
 	public ResponseEntity<?> handleWalletNotFound(WalletNotFoundException ex){
 	    return ResponseEntity.status(HttpStatus.NOT_FOUND)
-	            .body(new ExceptionModel(ex.getMessage(), "Please create a crypto wallet before attempting crypto conversion", HttpStatus.NOT_FOUND));
+	            .body(new ExceptionModel(ex.getMessage(), "Please create a crypto wallet before attempting conversion", HttpStatus.NOT_FOUND));
 	}
 
 	@ExceptionHandler(InvalidConversionResultException.class)
@@ -61,7 +61,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(BankAccountNotFoundException.class)
 	public ResponseEntity<?> handleBankAccountNotFound(BankAccountNotFoundException ex){
 		return ResponseEntity.status(HttpStatus.NOT_FOUND)
-	            .body(new ExceptionModel(ex.getMessage(), "Please create a bank account before attempting currency conversion", HttpStatus.NOT_FOUND));
+	            .body(new ExceptionModel(ex.getMessage(), "Please create a bank account before attempting conversion", HttpStatus.NOT_FOUND));
 	}
 	
 }

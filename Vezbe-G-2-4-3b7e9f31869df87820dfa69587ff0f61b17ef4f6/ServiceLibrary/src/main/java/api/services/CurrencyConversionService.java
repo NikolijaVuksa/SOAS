@@ -8,13 +8,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@Service
+import dto.CurrencyConversionDto;
+
+
 public interface CurrencyConversionService {
 
 	@GetMapping("/currency-conversion")
-	ResponseEntity<?> getConversion(@RequestParam String from, @RequestParam String to, @RequestParam BigDecimal quantity);
+	ResponseEntity<CurrencyConversionDto> getConversion(@RequestParam String from, 
+			@RequestParam String to, 
+			@RequestParam BigDecimal quantity,
+			@RequestHeader(value = "X-Internal-Call", defaultValue = "false") String internalCall);
 	
 	@GetMapping("/currency-conversion-feign")
-	ResponseEntity<?> getConversionFeign(@RequestHeader("X-User-Email") String email, @RequestParam String from, @RequestParam String to, @RequestParam BigDecimal quantity);
+	ResponseEntity<?> getConversionFeign(@RequestHeader("X-User-Email") String email, 
+			@RequestParam String from, 
+			@RequestParam String to, 
+			@RequestParam BigDecimal quantity,
+			@RequestHeader(value = "X-Internal-Call", defaultValue = "false") String internalCall);
+	
 	
 }

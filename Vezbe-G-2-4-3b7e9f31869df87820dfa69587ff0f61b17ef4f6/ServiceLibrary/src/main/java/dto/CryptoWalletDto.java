@@ -81,6 +81,24 @@ public class CryptoWalletDto {
 	        	return false;
 	    }
 	}
+	
+	public void subtractBalance(String currency, BigDecimal quantity) {
+		switch (currency) {
+        case "BTC": this.setBTC(this.getBTC().subtract(quantity)); break;
+        case "ETH": this.setETH(this.getETH().subtract(quantity)); break;
+        case "UST": this.setUST(this.getUST().subtract(quantity)); break;
+    }
+
+   
+	}
+	
+	public void addBalance(String currency, BigDecimal convertedAmount) {
+		switch (currency) {
+	        case "BTC": this.setBTC(this.getBTC().add(convertedAmount)); break;
+	        case "ETH": this.setETH(this.getETH().add(convertedAmount)); break;
+	        case "UST": this.setUST(this.getUST().add(convertedAmount)); break;
+	    }
+	}
 
 
 	

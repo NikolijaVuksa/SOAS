@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import api.services.CryptoExchangeService;
@@ -54,6 +55,9 @@ public class CryptoExchangeServiceImpl implements CryptoExchangeService {
 		return false;
 	}
 	
+	public ResponseEntity<List<String>> getAllCurrencies(){
+		return ResponseEntity.ok(repo.findAllDistinctCryptos());
+	};
 
     /*@Override
     public ResponseEntity<?> getCryptoExchange(String from, String to) {
