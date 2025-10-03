@@ -11,5 +11,5 @@ import dto.UserDto;
 public interface UsersServiceProxy {
 
 	@GetMapping("/users/email")
-	UserDto getUserByEmail(@RequestParam String email);
+	UserDto getUserByEmail(@RequestParam(value="email") String email);
 }

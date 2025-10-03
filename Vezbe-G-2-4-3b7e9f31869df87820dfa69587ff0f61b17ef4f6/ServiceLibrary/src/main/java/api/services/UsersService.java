@@ -9,10 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import dto.UserDto;
 
+@Service
 public interface UsersService {
 	
 	@GetMapping("/users")
@@ -20,9 +22,6 @@ public interface UsersService {
 	
 	@GetMapping("/users/email")
 	UserDto getUserByEmail(@RequestParam String email);
-	
-	@PostMapping("/users/newAdmin")
-	ResponseEntity<?> createAdmin(@RequestBody UserDto dto);
 	
 	@PostMapping("/users/newUser")
 	ResponseEntity<?> createUser(@RequestBody UserDto dto);
@@ -33,8 +32,4 @@ public interface UsersService {
 	@DeleteMapping("/users")
 	ResponseEntity<?> deleteUser(@RequestParam String email);
 	
-	@PostMapping("/users/newOwner")
-	ResponseEntity<?> createOwner(@RequestBody UserDto dto);
-
-
 }

@@ -14,6 +14,8 @@ import dto.CryptoWalletDto;
 public interface CryptoConversionProxy {
 
 	@GetMapping("/crypto-conversion-feign")
-	ResponseEntity<CryptoWalletDto> getCryptoConversionFeign(@RequestHeader("X-User-Email") String email, @RequestParam String from, @RequestParam String to, @RequestParam BigDecimal quantity);
+	ResponseEntity<CryptoWalletDto> getCryptoConversionFeign(@RequestHeader("X-User-Email") String email, @RequestParam(value = "from") String from, 
+			@RequestParam(value="to") String to, 
+			@RequestParam(value="quantity") BigDecimal quantity);
 
 }

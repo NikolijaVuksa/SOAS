@@ -46,10 +46,51 @@ public class UserServiceImpl implements UsersService{
 	    }
 	    return convertModelToDto(model);
 	}
-
-
-
+	
 	@Override
+	public ResponseEntity<?> createUser(UserDto dto) {
+	    if (repo.findByEmail(dto.getEmail()) != null) {
+			return ResponseEntity.status(HttpStatus.CONFLICT).body("User with passed email already exist");
+	    }
+	    
+	    
+	    if ("USER".equalsIgnoreCase(dto.getRole())) {
+	        UserModel model = convertDtoToModel(dto);
+	        repo.save(model);
+
+	        bankAccountProxy.createAccount(new BankAccountDto(dto.getEmail()));
+	        cryptoWalletProxy.createWallet(new CryptoWalletDto(dto.getEmail()));
+
+	        return ResponseEntity.status(HttpStatus.CREATED)
+                    .body("User created, bank account and crypto wallet opened");
+	    }
+
+	    if ("ADMIN".equalsIgnoreCase(dto.getRole())) {
+	        UserModel model = convertDtoToModel(dto);
+	        repo.save(model);
+	        return ResponseEntity.status(HttpStatus.CREATED)
+	                .body("Admin created");
+	    }
+
+	    if ("OWNER".equalsIgnoreCase(dto.getRole())) {
+	        if (repo.findByRole("OWNER") != null) {
+		        return ResponseEntity.status(HttpStatus.CONFLICT).body("There can only be one OWNER");
+
+	        }
+	        UserModel model = convertDtoToModel(dto);
+	        repo.save(model);
+	        return ResponseEntity.status(HttpStatus.CREATED)
+	                .body("Owner created");
+	    }
+
+	    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+	            .body("Unknown role: " + dto.getRole());
+	}
+
+
+
+
+	/*@Override
 	public ResponseEntity<?> createAdmin(UserDto dto) {
 		if(repo.findByEmail(dto.getEmail()) == null) {
 			dto.setRole("ADMIN");
@@ -80,6 +121,16 @@ public class UserServiceImpl implements UsersService{
 	                             .body("User with passed email already exists");
 	    }
 	}
+		@Override
+	public ResponseEntity<?> createOwner(UserDto dto) {
+		if(repo.findByRole("OWNER") != null) {
+		        return ResponseEntity.status(HttpStatus.CONFLICT).body("There can only be one OWNER");
+		    }
+	    dto.setRole("OWNER");
+	    UserModel model = convertDtoToModel(dto);
+	    return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(model));
+	}
+	*/
 
 
 	@Override
@@ -113,19 +164,6 @@ public class UserServiceImpl implements UsersService{
 	    }
 	}
 
-	
-	@Override
-	public ResponseEntity<?> createOwner(UserDto dto) {
-	    if(repo.findByEmail(dto.getEmail()) != null) {
-	        return ResponseEntity.status(HttpStatus.CONFLICT).body("User with this email already exists");
-	    }
-	    if(repo.findByRole("OWNER") != null) {
-	        return ResponseEntity.status(HttpStatus.CONFLICT).body("There can only be one OWNER");
-	    }
-	    dto.setRole("OWNER");
-	    UserModel model = convertDtoToModel(dto);
-	    return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(model));
-	}
 	
 	public UserDto convertModelToDto(UserModel model)
 	{

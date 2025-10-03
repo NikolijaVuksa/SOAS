@@ -15,15 +15,15 @@ public interface CurrencyConversionProxy {
 	
 	@GetMapping("/currency-conversion-feign")
 	ResponseEntity<?> getConversionFeign(@RequestHeader("X-User-Email") String email, 
-			@RequestParam String from, 
-			@RequestParam String to, 
-			@RequestParam BigDecimal quantity,
+			@RequestParam(value="from") String from, 
+			@RequestParam(value="to") String to, 
+			@RequestParam(value="quantity") BigDecimal quantity,
 			@RequestHeader(value = "X-Internal-Call", defaultValue = "false") String internalCall);
 	
 	@GetMapping("/currency-conversion")
-	ResponseEntity<CurrencyConversionDto> getConversion(@RequestParam String from, 
-			@RequestParam String to, 
-			@RequestParam BigDecimal quantity,
+	ResponseEntity<CurrencyConversionDto> getConversion(@RequestParam(value="to") String from, 
+			@RequestParam(value="to") String to, 
+			@RequestParam(value="quantity") BigDecimal quantity,
 			@RequestHeader(value = "X-Internal-Call", defaultValue = "false") String internalCall);
 	
 }

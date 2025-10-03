@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import dto.CurrencyConversionDto;
 
-
+@Service
 public interface CurrencyConversionService {
 
 	@GetMapping("/currency-conversion")

@@ -13,7 +13,8 @@ import dto.CurrencyExchangeDto;
 public interface CurrencyExchangeProxy {
 	
 	@GetMapping("/currency-exchange")
-	ResponseEntity<CurrencyExchangeDto> getExchangeFeign(@RequestParam (value = "from") String from, @RequestParam (value = "to")String to);
+	ResponseEntity<CurrencyExchangeDto> getExchangeFeign(@RequestParam (value = "from") String from, 
+			@RequestParam (value = "to")String to);
 
 	@GetMapping("/currency-exchange/currencies")
 	public ResponseEntity<List<String>> getAllCurrencies();

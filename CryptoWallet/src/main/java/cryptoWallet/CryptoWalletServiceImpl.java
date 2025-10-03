@@ -13,7 +13,6 @@ import api.services.CryptoWalletService;
 
 import dto.CryptoWalletDto;
 import dto.UserDto;
-import util.exceptions.WalletNotFoundException;
 
 @RestController
 public class CryptoWalletServiceImpl implements CryptoWalletService {
